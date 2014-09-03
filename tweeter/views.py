@@ -4,9 +4,9 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_protect, ensure_csrf_cookie
 from rest_framework import permissions, viewsets
 
-from tweeter.models import Tweet
-from tweeter.permissions import IsAuthorOrReadOnly
-from tweeter.serializers import TweetSerializer, UserSerializer
+from .models import Tweet
+from .permissions import IsAuthorOrReadOnly
+from .serializers import TweetSerializer, UserSerializer
 
 
 @csrf_protect
